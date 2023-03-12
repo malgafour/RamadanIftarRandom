@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">رمضاني</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">فطار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عصائر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">مقبلات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">حلويات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex flex-column h-100">
+
+        <!-- FOR DEMO PURPOSE -->
+        <section class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-4">اختار بين العديد من الاصناف</h1>
+                        <p class="fst-italic text-muted">
+                            قم بالضغط على زر عشوائي وسيقترح عليك الموقع ان تختصر يومك بالتفكير في ما ستحضرة اليوم من
+                            الافطار
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" id="iftarRandom" class="btn btn-success w-25">عشوائي
+                    <i class="fa fa-random" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        <section id="dataResults" class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="display-4" id="name"></h3>
+                        <p id="description" class="fst-italic text-muted">
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <table class="table table-bordered table-responsive text-white">
+                            <thead>
+                                <tr>
+                                    <th>الصنف</th>
+                                    <th id="subname"></th>
+                                </tr>
+                                <tr>
+                                    <th>المكونات</th>
+                                    <th id="ingredients"></th>
+                                </tr>
+                                <tr>
+                                    <th>طرق التحضير</th>
+                                    <th>
+                                        <a id="youtubeSearch" href="" class="btn btn-danger btn-sm" target="_blank">
+                                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                        </a>
+
+                                        <a id="googleSearch" href="" class="btn btn-warning btn-sm" target="_blank">
+                                            <i class="fa fa-google" aria-hidden="true"></i>
+
+                                        </a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <p>
+                        <img id="photo" class="img-fluid w-100" src="">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="w-100 py-4 flex-shrink-0">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1 text-white">رمضاني</h5>
+                        <p class="small text-muted"> قم بالضغط على زر عشوائي وسيقترح عليك الموقع ان تختصر يومك بالتفكير
+                            في ما ستحضرة اليوم من
+                            الافطار</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">القائمـــة</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="#">فطار</a></li>
+                            <li><a href="#">عصائر</a></li>
+                            <li><a href="#">مقبلات</a></li>
+                            <li><a href="#">حلويات</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">تابعنــــي</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="https://www.linkedin.com/in/malgafour" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                    malgafour
+                                </a></li>
+                            <li><a href="https://www.facebook.com/malgafour" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                    malgafour
+                                </a></li>
+                            <li><a href="https://twitter.com/malgafour" target="_blank">
+                                    <i class="fa fa-twitter-square"></i>
+                                    malgafour@
+                                </a></li>
+                            <li><a href="https://wa.me/message/PKQXB6IMTZIFB1" target="_blank">
+                                    <i class="fa fa-whatsapp"></i>
+                                    21090406649+
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./data.json"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            var data;
+            $('#dataResults').hide()
+            $("#iftarRandom").on('click', function () {
+                var min = 1;
+                var max = 30;
+                var result = Math.floor(Math.random() * (max - min + 1) + min);
+
+                function readTextFile(file, callback) {
+                    var rawFile = new XMLHttpRequest();
+                    rawFile.overrideMimeType("application/json");
+                    rawFile.open("GET", file, true);
+                    rawFile.onreadystatechange = function () {
+                        if (rawFile.readyState === 4 && rawFile.status == "200") {
+                            callback(rawFile.responseText);
+                        }
+                    }
+                    rawFile.send(null);
+                }
+                readTextFile("./data.json", function (text) {
+                    var s = JSON.parse(text);
+                    data = s;
+                });
+
+                $.each(data, function (i, v) {
+                    if (v.id == result) {
+                        $('#dataResults').show();
+                        $('#name').html(v.name);
+                        $('#description').html(v.description);
+                        $('#photo').attr('src', v.imgUrl);
+                        $('#subname').html(v.name);
+                        $('#ingredients').html(v.ingredients);
+                        $('#youtubeSearch').attr('href',
+                            'https://www.youtube.com/results?search_query=' + v.name
+                            .replace(' ', '+'));
+                        $('#googleSearch').attr('href',
+                            'https://www.google.com/search?client=firefox-b-d&q=' + v.name
+                            .replace(' ', '+'));
+                        return;
+                    }
+                });
+
+                $('html, body').animate({
+                    scrollTop: $("#dataResults").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
