@@ -27,13 +27,16 @@
                         <a class="nav-link active" aria-current="page" href="#">فطار</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">عصائر</a>
+                        <a class="nav-link" href="#Juices"
+                            onclick="$('#Juices').show();$('#appetizers, #dessert').hide();">عصائر</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">مقبلات</a>
+                        <a class="nav-link" href="#appetizers"
+                            onclick="$('#appetizers').show();$('#Juices, #dessert').hide();">مقبلات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">حلويات</a>
+                        <a class="nav-link" href="#dessert"
+                            onclick="$('#dessert').show();$('#appetizers, #Juices').hide();">حلويات</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +84,7 @@
                                     <th id="ingredients"></th>
                                 </tr>
                                 <tr>
-                                    <th>طرق التحضير</th>
+                                    <th>بحث</th>
                                     <th>
                                         <a id="youtubeSearch" href="" class="btn btn-danger btn-sm" target="_blank">
                                             <i class="fa fa-youtube-play" aria-hidden="true"></i>
@@ -99,6 +102,274 @@
                     <p>
                         <img id="photo" class="img-fluid w-100" src="">
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appetizers" class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-4">اختار بين العديد من المقبلات</h1>
+
+                        <table class="table text-white table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">الصنف</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>بابا غنوج</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>طحينه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>حمص بالطحينه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>فتوش</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>لبنه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>مخلل</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>سمبوسك جبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>سمبوسك لحم</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>سمبوسك فراخ</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>سمبوسك بسطرمه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>سلطه البطاطس الحاره</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>سلطه زبادي بالخيار</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>كبيبة</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dessert" class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-4">اختار بين العديد من الحلويات</h1>
+
+                        <table class="table text-white table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">الصنف</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>البسبوسه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>كنافه بالمكسرات</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>كنافه نابلسيه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>كنافه بالايس كريم</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>كنافه بالمانجا</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>قطايف بالمكسرات</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>قطايف بالتمر</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>بقلاوة</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>جلاش بالقشطه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>أصابع جلاش بالمكسرات</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>ام علي</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Juices" class="hero text-white py-5 flex-grow-1">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-4">اختار بين العديد من العصائر</h1>
+
+                        <table class="table text-white table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">الصنف</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>العرقسوس</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>تمر هندي</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>السوبيا </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>الخروب </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>الدوم </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>الكركديه</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>قمر الدين </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>بلح باللبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>خشاف</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>فراوله باللبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>موز باللبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>جوافه باللبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>مانجو</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">14</th>
+                                    <td>عصير برتقال</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>تمر باللبن</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">16</th>
+                                    <td>عصير رمان</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">17</th>
+                                    <td>عصير تفاح</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,7 +432,7 @@
     <script>
         $(document).ready(function () {
             var data;
-            $('#dataResults').hide();
+            $('#dataResults, #dessert, #appetizers, #Juices').hide();
             var min = 1;
             var max = 30;
 
@@ -180,10 +451,14 @@
                 var s = JSON.parse(text);
                 data = s;
             });
+
+
+
+
             $("#iftarRandom").on('click', function () {
 
                 var result = Math.floor(Math.random() * (max - min + 1) + min);
-
+                $('#photo').removeAttr('src');
 
 
                 $.each(data, function (i, v) {
@@ -205,7 +480,7 @@
                 });
 
                 $('html, body').animate({
-                    scrollTop: $("#dataResults").offset().top
+                    scrollTop: $("#dataResults, #appetizers").offset().top
                 }, 1000);
             });
         });
